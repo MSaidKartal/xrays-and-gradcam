@@ -78,17 +78,17 @@ def apply_mask(image, mask):
     return np.uint8(255 * cam)
 
 
-def plot_gradcam(image, vgg_cam, res_cam, dense_cam):
+def plot_gradcam(image, label_name, vgg_cam, res_cam, dense_cam):
     image = deprocess_image(image)
     name_dict = {
-        'Original Image': image,
+        f'Original Image\n{label_name}': image,
         'GradCAM (VGG-16)': apply_mask(image, vgg_cam),
         'GradCAM (ResNet-18)': apply_mask(image, res_cam),
         'GradCAM (DenseNet-121)': apply_mask(image, dense_cam)
     }
 
     plt.style.use('seaborn-notebook')
-    fig = plt.figure(figsize=(20, 4))
+    fig = plt.figure(figsize=(30, 10))
     for i, (name, img) in enumerate(name_dict.items()):
         ax = fig.add_subplot(1, 4, i+1, xticks=[], yticks=[])
         if i:
