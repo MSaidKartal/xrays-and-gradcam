@@ -65,7 +65,7 @@ def plot_confmat(train_mat, test_mat, classes, filename):
     ax.set_ylabel('Actual Classes', fontweight='bold')
 
     plt.tight_layout()
-    fig.savefig(f'outputs/confusion_matrices/{filename}')
+    #fig.savefig(f'outputs/confusion_matrices/{filename}')
     plt.show()
     plt.close()
 
@@ -101,6 +101,6 @@ def plot_gradcam(image, vgg_cam, res_cam, dense_cam):
         fontweight='bold', fontsize=16
     )
     plt.tight_layout()
-    fig.savefig('outputs/grad_cam.png')
+    #fig.savefig('outputs/grad_cam.png')
     plt.show()
     plt.close()
