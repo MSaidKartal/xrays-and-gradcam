@@ -88,7 +88,7 @@ def plot_gradcam(image, label_name, vgg_cam, res_cam, dense_cam):
     }
 
     plt.style.use('seaborn-notebook')
-    fig = plt.figure(figsize=(30, 10))
+    fig = plt.figure(figsize=(15, 5))
     for i, (name, img) in enumerate(name_dict.items()):
         ax = fig.add_subplot(1, 4, i+1, xticks=[], yticks=[])
         if i:
