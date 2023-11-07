@@ -53,7 +53,7 @@ def plot_confmat(train_mat, test_mat, classes, filename):
     ax = fig.add_subplot(121)
     ax = sns.heatmap(train_mat, annot=True, cmap='tab20c',
                      fmt='d', annot_kws={'size': 18})
-    ax.set_title('Confusion Matrix (Train Set)', fontweight='bold')
+    ax.set_title('Confusion Matrix (Validation Set)', fontweight='bold')
     ax.set_xlabel('Predicted Classes', fontweight='bold')
     ax.set_ylabel('Actual Classes', fontweight='bold')
 
