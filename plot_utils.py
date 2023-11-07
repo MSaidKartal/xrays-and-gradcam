@@ -81,10 +81,10 @@ def apply_mask(image, mask):
 def plot_gradcam(image, label_name, vgg_cam, res_cam, dense_cam):
     image = deprocess_image(image)
     name_dict = {
-        f'Original Image\n{label_name[0]}': image,
-        f'GradCAM (VGG-16)\n{label_name[1]}': apply_mask(image, vgg_cam),
-        f'GradCAM (ResNet-18)\n{label_name[2]}': apply_mask(image, res_cam),
-        f'GradCAM (DenseNet-121)\n{label_name[3]}': apply_mask(image, dense_cam)
+        f'Original Image\nGT: {label_name[0]}': image,
+        f'GradCAM (VGG-16)\nPred: {label_name[1]}': apply_mask(image, vgg_cam),
+        f'GradCAM (ResNet-18)\nPred: {label_name[2]}': apply_mask(image, res_cam),
+        f'GradCAM (DenseNet-121)\nPred: {label_name[3]}': apply_mask(image, dense_cam)
     }
 
     plt.style.use('seaborn-notebook')
