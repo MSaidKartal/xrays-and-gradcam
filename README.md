@@ -1,5 +1,8 @@
 # Classification and Gradient-based Localization of Chest Radiographs
 
+Tutorial Part 1:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MSaidKartal/xrays-and-gradcam/blob/main/tutorial_part1.ipynb)
+
 ![cover](./assets/cover.png)
 ## Contents
 - [Introduction](#introduction)
