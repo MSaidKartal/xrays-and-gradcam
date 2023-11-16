@@ -1,6 +1,6 @@
 # Classification and Gradient-based Localization of Chest Radiographs
 
-Workshop:
+Workbook:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MSaidKartal/xrays-and-gradcam/blob/master/Workbook_Chest.ipynb)
 
 
